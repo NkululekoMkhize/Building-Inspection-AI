@@ -1,0 +1,30 @@
+{
+  "package_name": "Building Inspection AI System",
+  "version": "1.0.0",
+  "created_date": "2025-10-03T21:04:02.245567",
+  "components": {
+    "crack_model": {
+      "accuracy": "99.7%",
+      "file": "crack_detection_model.h5"
+    },
+    "moisture_model": {
+      "accuracy": "89.8%",
+      "file": "moisture_detection_model.h5",
+      "threshold": "0.995"
+    },
+    "api": {
+      "file": "robust_building_inspection_api.py",
+      "features": [
+        "image_analysis",
+        "video_analysis",
+        "error_handling"
+      ]
+    }
+  },
+  "test_results": {
+    "clear_wall.jpg": "PASS - No defects correctly identified",
+    "cracked_concrete.jpg": "PASS - Critical defects correctly identified",
+    "wet_ceiling.jpg": "PASS - Critical defects correctly identified",
+    "mixed_defects.jpg": "PASS - Critical defects correctly identified"
+  }
+}
